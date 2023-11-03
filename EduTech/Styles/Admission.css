@@ -1,0 +1,154 @@
+﻿.main
+{
+     margin:0px;
+     width:1300px;
+     height:auto;
+     margin:auto;
+     margin-top:35px;
+}
+
+.controls
+{
+   min-width:100%;
+    border:1px solid silver;
+    height:55px;
+    font-size :15px;
+    color:Black;
+    font-family:Arial CE;
+    margin:auto;
+}
+.message
+{
+    height:auto;
+    min-width:100%;
+    font-size:15px;
+    color:Red;
+    font-family:@Arial Unicode MS;
+    text-align:center;
+    
+}
+
+.txtbox
+{
+    -webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+}
+
+.submain1
+{
+   border:1px solid silver;
+    height:352px;
+    min-width:100%;
+    margin:auto;
+    margin-top:10px;
+}
+.subdet
+{
+    float:left;
+    width:79%;
+    /*margin:1px;*/
+    height:100%;
+    
+}
+.subdet table td
+{
+    padding-top:3px;
+}
+.subphoto
+{
+    float:right;
+    margin:1px;
+    width:20%;
+    height:98%;
+    border:1px solid silver;
+    text-align:center;
+}
+.subdet1
+{
+    width:99%;
+    height:71%;
+    border:1px solid silver;
+    margin : auto;
+    padding-left:5px;
+    padding-top:5px;
+    margin-top:1px;
+    
+}
+
+.subdet2
+{
+    width:99%;
+    height:27%;
+   font-family:Arial CE;
+    font-weight:bold;
+    text-align:center;
+    margin:auto;
+    
+    margin-left:1px;
+    padding:1px;
+    
+
+    
+
+}
+
+.det1
+{
+    float:left;
+    width:53%;
+    height:90%;
+    margin-top:2px;
+    font-family:Arial CE;
+    font-weight:bold;
+    
+}
+
+.det2
+{
+     float:right;
+    width:44%;
+    height:98%;
+    margin-top:2px;
+     font-family:Arial CE;
+    font-weight:bold;
+   margin-right:5px;
+    
+
+}
+.boarddet
+{
+    min-width:100%;
+    border:1px solid silver;
+    height:auto;
+    font-family:Arial CE;
+    font-weight:bold;
+    margin: auto;
+    margin-top:6px;
+    padding-left:6px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.persondet
+{
+ min-width:100%;
+ font-family:Arial CE;
+    font-weight:bold;
+    margin:auto;
+    margin-bottom:10px;
+    border:1px solid silver;
+    margin-top:6px;
+    height:auto;
+     padding-left:6px;
+    padding-top:5px;
+    padding-bottom:5px;
+}

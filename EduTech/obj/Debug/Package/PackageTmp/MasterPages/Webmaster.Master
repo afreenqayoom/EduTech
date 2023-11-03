@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Webmaster.master.cs" Inherits="EduTech.MasterPages.Webmaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>EduTech</title>
+   <script language="javascript" type="text/javascript" src="../aspnet_client/system_web/4_0_30319/crystalreportviewers13/js/crviewer/crv.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Styles/main.css" type="text/css" rel="Stylesheet" />
+    <link href="../Styles/menu.css" type="text/css" rel="Stylesheet" />
+    <link href="../Styles/Controls.css" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+        <div id="container">
+        <div id="header">
+            <div class="headerimg">
+            <img src="<%= Page.ResolveUrl("~/Images/Main/logo.png") %>" alt="No logo" />
+            </div> 
+            <div class="headertext">EduTech - S.P Model Hr. Sec. Institute</div>
+             <div style="float:right;margin-top:0px;width:auto;margin-right:50px; text-align:center;">
+    <asp:Label ID="lblsession" runat="server" ForeColor="White" BackColor="#2A679F" 
+                     BorderColor="#003366" BorderStyle="Groove" BorderWidth="2px" Font-Bold="True" 
+                     Font-Size="16pt" Width="200px"></asp:Label></div>
+             </div>       
+            <div class="menunav">
+            <nav id="menu-wrap">    
+	<ul id="menu">
+		
+
+		<li>
+			<a href="">ADMISSION</a>
+			<ul>
+				<li>
+					<a href="<%= Page.ResolveUrl("~/Pages/Admission/NewAdmission.aspx") %>">New Admission</a>
+								
+				</li>
+				<li>
+					<a href="<%= Page.ResolveUrl("~/Pages/Admission/Viewreport.aspx?code=100") %>">Enrollment Sheet</a>
+
+								
+				</li>
+
+				<li>
+					<a href="<%= Page.ResolveUrl("~/Pages/Admission/Viewreport.aspx?code=101") %>">Admission cum Examination Card</a>
+								
+				</li>
+				<li>
+					<a href="<%= Page.ResolveUrl("~/Pages/Admission/Viewreport.aspx?code=102") %>">Identity Card</a>				
+					
+				</li>
+                <li>
+					<a href="<%= Page.ResolveUrl("~/Pages/Admission/Viewreport.aspx?code=103") %>">Sports Form</a>				
+					
+				</li>
+                <li>
+					<a href="<%= Page.ResolveUrl("~/Pages/Admission/Viewreport.aspx?code=104") %>">Library Form</a>				
+					
+				</li>
+                <li>
+					<a href="<%= Page.ResolveUrl("~/Pages/Admission/Viewreport.aspx?code=105") %>">Admission Register</a>				
+					
+				</li>
+                <li>
+					<a href="<%= Page.ResolveUrl("~/Pages/Admission/ViewSubdet.aspx?code=106") %>">Subject-wise Details</a>				
+					
+				</li>
+
+                 <li>
+					<a href="<%= Page.ResolveUrl("~/Pages/Admission/Viewreport.aspx?code=107") %>">Attendance-Sheet</a>				
+					
+				</li>
+                <li>
+					<a href="<%=Page.ResolveUrl("~/Pages/Printpreview.aspx?code=108") %>">Micropack</a>				
+						
+				</li>
+                <li>
+                <a href="">Certificates</a>
+                <ul>
+                <li>
+                <a href="<%=Page.ResolveUrl("~/Pages/Admission/Viewreport.aspx?code=109") %>">Bonafide Certificate</a></li>
+                <li><a href="<%=Page.ResolveUrl("~/Pages/Admission/Viewreport.aspx?code=110") %>">Discharge Cum Character Certificate</a></li>
+                </ul>
+                </li>
+			</ul>
+		</li>
+		<li>
+			<a href="">EXAMINATION</a>
+			<ul>
+
+				<li>
+					<a href="<%=Page.ResolveUrl("~/Pages/Examination/Viewmarksdet.aspx?code=200") %>">View Marks Details</a>
+										
+				</li>
+				<li>
+					<a href="">Exam Marks Details</a>
+					<ul>
+						<li>
+
+							<a href="<%=Page.ResolveUrl("~/Pages/Examination/Selectsub.aspx?code=201&exam=UNIT-I MARKS&ex=U1") %>">Unit-I Marks</a>
+														
+						</li>
+
+						<li>
+							<a href="<%=Page.ResolveUrl("~/Pages/Examination/Selectsub.aspx?code=202&exam=UNIT-II MARKS&ex=U2") %>">Unit-II Marks</a>
+														
+						</li>
+
+						<li>
+							<a href="<%=Page.ResolveUrl("~/Pages/Examination/Selectsub.aspx?code=203&exam=TERM-I MARKS&ex=T1") %>">Term-I Marks</a>
+														
+						</li>
+                        <li>
+                            <a href="<%=Page.ResolveUrl("~/Pages/Examination/Selectsub.aspx?code=204&exam=TERM-II MARKS&ex=T2") %>">Term-II Marks</a>
+                        </li>
+
+					</ul>					
+				</li>
+				
+
+			</ul>		
+		</li>
+		<li><a href="">Options</a>
+        <ul><li><a href="<%=Page.ResolveUrl("~/Pages/Sessions/ChangeSession.aspx?code=300") %>">Change Session</a></li>
+        <li><a href="<%=Page.ResolveUrl("~/Pages/Sessions/CreateSession.aspx?code=301") %>">Create New Session</a></li>
+        <li><a>Users</a>
+        <ul><li><a href="<%=Page.ResolveUrl("~/Pages/Newuser.aspx") %>">Create User</a></li>
+        <li><a href="<%=Page.ResolveUrl("~/Pages/Changepass.aspx") %>">Change Password</a></li></ul></li></ul>
+        
+        </li>
+		<li><a href="<%=Page.ResolveUrl("~/Pages/Logout.aspx") %>">[Log out]</a></li>
+        	</ul>
+   
+</nav>
+
+            </div>
+        <div id="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+                <div class="copyright">
+        <a href="#" target="_blank" id="copyright_link">Copyright
+                    © 2016  </a>
+        </div>
+        <div class="footer-right">
+        </div>
+        </div>
+        </div>
+</body>
+</html>
